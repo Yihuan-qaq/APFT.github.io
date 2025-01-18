@@ -52,33 +52,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
     </div>
-
   </div>
 </nav>
 
@@ -87,65 +61,34 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">APFT: Adaptive Phoneme Filter Template to Generate Anti-compression Speech Adversarial Example in Real-time</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              Yihuan Huang<sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              Yanzhen Ren<sup>1,2</sup>, Member, IEEE,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              Zongkun Sun<sup>1,2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              Liming Zhai<sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              Jingmin Wang<sup>1,2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              Wuyang Liu<sup>1,2</sup>, Graduate Student Member, IEEE
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>Key Laboratory of Aerospace Information Security and Trusted Computing, Ministry of Education</span>
+            <span class="author-block"><sup>2</sup>School of Cyber Science and Engineering, Wuhan University</span>
+            <span class="author-block"><sup>3</sup>School of Computer Science, Central China Normal University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
             </div>
           </div>
         </div>
@@ -162,31 +105,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Automatic Speech Recognition (ASR) systems are extensively employed for speech censoring. Speech Adversarial Example (AE) offers a novel approach to protecting speech privacy by forcing ASR to mistranscribe. However, existing speech AE face two challenges in real-time voice interactive applications, such as IP telephone, voice chat, or video conference, it cannot be generated in real-time, and its defensive capability is significantly reduced after the essential audio compression for network transmission. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            In this paper, the Adaptive Phoneme Filter Template (APFT) is proposed to solve these problems. The key features of APFT include: 1) Phoneme-level Template, which generates the universal AE templates for each phoneme, enabling APFT to generate AE in real-time. 2) Filter, which generates AE by eliminating redundant signals from the speech rather than by adding carefully crafted noise, improving the compression robustness of APFT. 3) Adaptive Band Filtering (ABF), which obtains the frequency bands related to the speech content and applies Phoneme-level Template and Filter in these bands to improve the speech quality.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            The comprehensive experimental results show that APFT has four advantages: 1) Real-time. The average AE generation time of APFT for one second speech is lower than 1.1 ms. 2) Compression Robustness. The average WER of APFT achieves 0.64 under the popular audio codec AAC and Opus, while the comparative methods only achieve 0.24 and 0.15 . 3) Transferability. APFT is trained on a single dataset and ASR system. When evaluated on three additional datasets and four ASR systems, APFT achieved an average WER of 0.72, significantly outperforming the comparison methods, which achieved average WER of 0.29 and 0.12. 4) Stealthiness. The AE generated by APFT achieves a MOS of 4.07, indicating the high speech quality. Furthermore, to evaluate the performance of APFT in real-world applications, we deploye it into the voice call of Telegram which uses Opus as audio encoder. Experimental results show the practical applicability of APFT in real-time interaction scenarios. APFT raises the WER of the Google speech recognition model to 0.714, indicating its effectiveness in preventing the censorship of speech content in online interactive applications.
           </p>
         </div>
       </div>
@@ -195,7 +120,7 @@
   </div>
 </section>
 
-<section class="section" id="BibTeX">
+<!--<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -205,18 +130,11 @@
   year      = {2021},
 }</code></pre>
   </div>
-</section>
+</section>-->
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
