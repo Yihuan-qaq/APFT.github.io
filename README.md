@@ -1,8 +1,8 @@
-# Nerfies
+# APFT
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+The source code of the website comes from the [Nerfies website](https://nerfies.github.io).
 
-If you find APFT useful for your work please cite:
+If you find APFT useful for your work, please cite:
 ```
 @ARTICLE{11014245,
   author={Huang, Yihuan and Ren, Yanzhen and Sun, Zongkun and Zhai, Liming and Wang, Jingmin and Liu, Wuyang},
